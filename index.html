@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Macbook</title>
+    <!-- tailwind css link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+
+    </header>
+
+    <!-- main section -->
+    <main>
+        <article class="w-10/12 mx-auto">
+            <div class="grid lg:grid-cols-2 lg:gap-4">
+                
+                <!-- Macbook image added -->
+                <div class="lg:pr-4">
+                    <img class="lg:w-1/2 mx-auto lg:mx-0 lg:ml-auto my-8 lg:my-16" src="images/mac.png" alt="">
+                </div>
+
+                <!-- Macbook info added -->
+                <div class="lg:pl-4 ">
+                    <h1 class="text-4xl	mt-16 font-bold	mb-4">Customize your Blue 24-inch <br> iMac with Apple M1 chip.<span class="animate-pulse text-red-600 font-semibold text-sm align-text-top inline-block bg-yellow-300 px-2 rounded ">New</span></h1> 
+
+                    <!-- "New" notification added -->
+                    
+
+                    <p class="text-justify text-sm">Apple M1 chip with 8-core CPU with 4 performace cores and 4 efficiency <br> cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 245GB <br> SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Kewboard - <br> US English</p>
+
+
+                    <!--Config Selection section -->
+                    <section class="my-5">
+
+                        <!-- Memory size selection -->
+                        <h2 class="font-bold">Memory</h2>
+                        <button id="memory-8gb" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">8GB unified memory</button>
+
+                        <button id="memory-16gb" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">16GB unified memory</button>
+
+
+                        <!-- Storage size selection -->
+                        <h2 class="mt-5 font-bold">Storage</h2>
+                        <button id="storage-256gb" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">256GB SSD storage</button>
+
+                        <button id="storage-512gb" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">512GB SSD storage</button>
+
+                        <button id="storage-1tb" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">1TB SSD storage</button>
+
+                        <!-- Delivery option selection -->
+                        <h2 class="mt-5 font-bold">Storage</h2>
+                        <button id="delivery-normal" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">Friday, Aug 25 FREE Prime Delivery</button>
+
+                        <button id="delivery-urgent" class="my-2 border border-gray-500 rounded px-4 py-1 hover:bg-gray-100">Friday, Aug 21 Delivery charge $20</button>
+
+                    </section>
+
+                    <!-- Calculation section -->
+                    <section class="mt-16 mb-8">
+                        <table>
+                            <tbody>
+                                <tr class="border-b border-gray-300 font-semibold">
+                                    <td class="w-1/2 text-left lg:pl-2 py-2">Base Price</td>
+                                    <td class="w-1/2 text-right pr-2 py-2">$<span id="base-price">1299</span></td>
+                                </tr>
+                                <tr class="border-b border-gray-300 font-semibold">
+                                    <td class="w-1/2 text-left lg:pl-2 py-2">Extra Memory Cost</td>
+                                    <td class="w-1/2 text-right pr-2 py-2">$<span id="extra-memory-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b border-gray-300 font-semibold">
+                                    <td class="w-1/2 text-left lg:pl-2 py-2">Extra Storage Cost</td>
+                                    <td class="w-1/2 text-right pr-2 py-2">$<span id="extra-storage-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b-2 border-gray-500 font-semibold">
+                                    <td class="w-1/2 text-left lg:pl-2 py-2">Delivery Charge</td>
+                                    <td class="w-1/2 text-right pr-2 py-2">$<span id="extra-delivery-cost">0</span></td>
+                                </tr>
+                                <tr class="font-semibold">
+                                    <td class="w-1/2 text-left lg:pl-2 py-2">Total Price</td>
+                                    <td class="w-1/2 text-right pr-2 py-2">$<span id="total-price">1299</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <!-- pomo code section -->
+                        <div class="mt-4 lg:pl-2">
+                            <p class="text-sm font-medium">Add Pomo Code</p>
+                            <input id="pomo-code" class="my-2 border-2 border-gray-300 rounded lg:px-4 py-1" type="text">
+                            <button id="pomo-btn" class="my-2 bg-red-700 border text-white border-red-500 rounded px-4 py-1 font-normal hover:bg-red-600">Apply</button>
+                        </div>
+
+                    </section>
+
+
+                </div>
+            </div>
+            <!-- Total with discount price -->
+            <hr class="border border-gray-400">
+            <h1 class="text-4xl text-center mt-4 font-semibold mb-4">Total: $<span id="total-cost">1299</span></h1>
+        </article>
+    </main>
+
+    <!-- javascript added -->
+    <script src="js/purchase.js"></script>
+</body>
+</html>
